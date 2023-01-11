@@ -1,5 +1,12 @@
-const img1=document.querySelector(".panel1");
-const img2=document.querySelector(".panel2");
-const img3=document.querySelector(".panel3");
-const img4=document.querySelector(".panel4");
-const img5=document.querySelector(".panel5");
+const img=document.querySelectorAll(".panel1");
+
+// img.forEach(i=>{
+//     i.addEventListener("mouseover",()=>i.style.flex=5);
+//     i.addEventListener("mouseout",()=>i.style.flex=0.5);
+// });
+
+
+img.forEach(i=>{
+    i.addEventListener("mouseover",()=>i.classList.add("active"));
+    i.addEventListener("mouseout",()=>i.classList.remove("active"));
+});
